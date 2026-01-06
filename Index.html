@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Muazom | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <style>
+    body {
+      background-color: #0b1220;
+      color: #ffffff;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.03);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .glass:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <nav class="fixed top-0 left-0 w-full z-50 glass">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+      <h1 class="text-lg font-semibold tracking-wide">MY PORTFOLIO</h1>
+      <div class="space-x-4 sm:space-x-6 text-sm text-gray-300 hidden sm:block">
+        <a href="#about" class="hover:text-white">About</a>
+        <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#contact" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 pt-24">
+    <div class="max-w-4xl text-center">
+      <h2 id="heroTitle" class="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
+        Hey, I'm <span class="text-blue-400">Muili Muazom Olatunde</span>
+      </h2>
+      <p id="heroSubtitle" class="text-gray-300 text-base sm:text-lg md:text-xl mb-8">
+        Cybersecurity Enthusiast & Web Developer
+      </p>
+      <div id="heroButtons" class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#projects" class="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
+          View Projects
+        </a>
+        <a href="#contact" class="px-6 py-3 border border-gray-500 rounded-lg hover:bg-white hover:text-black transition">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+
+      <div class="glass p-8 rounded-2xl">
+        <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          Hey, I'm Muazom. I’m a student developer with strong interests in cybersecurity,
+          ethical hacking, and modern web development.
+        </p>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          I build web applications using HTML, CSS, JavaScript, and Tailwind CSS,
+          focusing on performance, clean structure, and security-aware design.
+        </p>
+        <p class="text-gray-300 leading-relaxed">
+          My long-term goal is to merge secure software development with advanced
+          cybersecurity expertise.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold mb-6">Skills & Focus</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+          <div class="glass p-4 rounded-xl">HTML & CSS</div>
+          <div class="glass p-4 rounded-xl">JavaScript</div>
+          <div class="glass p-4 rounded-xl">Tailwind CSS</div>
+          <div class="glass p-4 rounded-xl">GSAP</div>
+          <div class="glass p-4 rounded-xl">Python</div>
+          <div class="glass p-4 rounded-xl">Cybersecurity</div>
+          <div class="glass p-4 rounded-xl">Linux</div>
+          <div class="glass p-4 rounded-xl">Git</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects" class="py-24 px-4 sm:px-6 bg-[#0f172a]">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-12 text-center">Projects</h3>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+        <div class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">Loverse</h4>
+          <p class="text-gray-300 mb-3">
+            A community web platform for poems, chat, and interaction.
+          </p>
+          <span class="text-sm text-blue-400">In Progress</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">Security Testing</h4>
+          <p class="text-gray-300 mb-3">
+            Educational security testing and vulnerability identification.
+          </p>
+          <span class="text-sm text-blue-400">Completed</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">Frontend Experiments</h4>
+          <p class="text-gray-300 mb-3">
+            UI layouts, animations, and responsive design tests.
+          </p>
+          <span class="text-sm text-blue-400">Ongoing</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">Python Security Tools</h4>
+          <p class="text-gray-300 mb-3">
+            Automation scripts and security concept tools.
+          </p>
+          <span class="text-sm text-blue-400">Planned</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">Networking Labs</h4>
+          <p class="text-gray-300 mb-3">
+            IP addressing, ports, protocols, and traffic analysis.
+          </p>
+          <span class="text-sm text-blue-400">Ongoing</span>
+        </div>
+
+        <div class="glass p-6 rounded-2xl">
+          <h4 class="text-xl font-semibold mb-2">FoxHill Security</h4>
+          <p class="text-gray-300 mb-3">
+            Personal cybersecurity brand focused on ethical hacking.
+          </p>
+          <span class="text-sm text-blue-400">Upcoming</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-24 px-4 sm:px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+      <p class="text-gray-300 mb-10">
+        Open to collaboration, learning opportunities, and serious discussions.
+      </p>
+
+      <div class="flex justify-center gap-4 flex-wrap">
+        <a href="mailto:molatunde308@gmail.com" class="px-6 py-3 glass rounded-lg hover:bg-white hover:text-black transition">Email</a>
+        <a href="https://github.com/muazom" target="_blank" class="px-6 py-3 glass rounded-lg hover:bg-white hover:text-black transition">GitHub</a>
+        <a href="https://discord.com/users/muazom" target="_blank" class="px-6 py-3 glass rounded-lg hover:bg-white hover:text-black transition">Discord</a>
+        <a href="https://instagram.com/muazom_" target="_blank" class="px-6 py-3 glass rounded-lg hover:bg-white hover:text-black transition">Instagram</a>
+        <a href="https://twitter.com/muazom_" target="_blank" class="px-6 py-3 glass rounded-lg hover:bg-white hover:text-black transition">Twitter</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    gsap.from("#heroTitle", { opacity: 0, y: 40, duration: 1 });
+    gsap.from("#heroSubtitle", { opacity: 0, y: 30, duration: 1, delay: 0.3 });
+    gsap.from("#heroButtons", { opacity: 0, y: 20, duration: 1, delay: 0.6 });
+
+    gsap.utils.toArray(".glass").forEach(el => {
+      gsap.from(el, {
+        scrollTrigger: el,
+        opacity: 0,
+        y: 30,
+        duration: 0.8
+      });
+    });
+  </script>
+
+</body>
+</html>
